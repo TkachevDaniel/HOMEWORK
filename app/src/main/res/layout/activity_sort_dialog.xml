@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SORT ORDER: "
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+             />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/TopRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Top Rating"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/PopularRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Popular" />
+
+            <Button
+                android:id="@+id/buttonOK"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textSize="20dp"
+                android:text="Ok"
+                android:textColor="@color/red" />
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
